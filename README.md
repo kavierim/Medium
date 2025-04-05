@@ -15,5 +15,42 @@ Series guiding you through the practical application of Transformer models for v
 
 Source codes are stored to [Transformers_Unleashed](Transformers_Unleashed) folder.
 
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+
+### Environment Setup
+It's recommended to use a virtual environment for this project:
+
+#### Using venv (Python's built-in virtual environment)
+```bash
+# Create a virtual environment
+python -m venv transformers_env
+
+# Activate the virtual environment
+# On Windows
+transformers_env\Scripts\activate
+# On macOS/Linux
+source transformers_env/bin/activate
+```
+
+#### Using Conda
+```bash
+# Create a new conda environment
+conda create -n transformers_env
+
+# Activate the environment
+conda activate transformers_env
+```
+
+### Dependencies
+All required dependencies are listed in the `requirements.txt` file. To install these dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## License
 This project source codes are licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
