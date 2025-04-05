@@ -1,0 +1,8 @@
+transformers
+datasets 
+evaluate 
+torch 
+pandas 
+requests 
+accelerate 
+sentencepiece
