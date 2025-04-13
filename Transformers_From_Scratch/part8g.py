@@ -19,7 +19,7 @@ from part8e import *
 from part8f import *
 
 # --- Main Training Script ---
-device = "cpu" # Change to "cuda" if GPU is available 
+device = "cuda" # Change to "cuda" if GPU is available 
 
 def train_one_epoch(model, dataloader, loss_fn, optimizer, device, pad_id):
     """ Trains the model for one epoch. """
@@ -114,7 +114,7 @@ print(f"Model created with {sum(p.numel() for p in model.parameters()):,} parame
 optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE, betas=(0.9, 0.98), eps=1e-9)
 
 # 3. Run Training Loop
-NUM_EPOCHS = 5 # Train for a few epochs for demo
+NUM_EPOCHS = 10 # Train for a few epochs for demo
 print(f"\n--- Starting Training for {NUM_EPOCHS} Epochs ---")
 
 for epoch in range(1, NUM_EPOCHS + 1):
@@ -127,4 +127,4 @@ for epoch in range(1, NUM_EPOCHS + 1):
 
 print("Training finished.")
 # Optional: Save the trained model
-# torch.save(model.state_dict(), "transformer_copy_task.pth")
+torch.save(model.state_dict(), "transformer_copy_task.pth")
